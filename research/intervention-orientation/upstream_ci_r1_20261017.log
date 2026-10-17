@@ -1,0 +1,47 @@
+....................F
+======================================================================
+FAIL: test_two_pass_runner_with_real_sdk (test_review_sdk.SDKTests.test_two_pass_runner_with_real_sdk)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/ai4s_upstream_20261017/ci_checks/test_review_sdk.py", line 66, in test_two_pass_runner_with_real_sdk
+    self.assertEqual(completed.returncode, 0, completed.stderr)
+AssertionError: 1 != 0 : Installed 19 packages in 27ms
+Reviewing: /tmp/tmpifb_39pm/proposal.md
+Using model: openai/dots-studio/dots-3-note-preview:free
+Rubric: /tmp/ai4s_upstream_20261017/rubrics/task-proposal.md
+Traceback (most recent call last):
+  File "/tmp/ai4s_upstream_20261017/ci_checks/rubric_review.py", line 680, in <module>
+    main()
+  File "/tmp/ai4s_upstream_20261017/ci_checks/rubric_review.py", line 612, in main
+    review = call_llm(rubric, user_content, args.model)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ai4s_upstream_20261017/ci_checks/rubric_review.py", line 309, in call_llm
+    return call_openai(system, user, model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ai4s_upstream_20261017/ci_checks/rubric_review.py", line 271, in call_openai
+    client = openai.OpenAI(timeout=90, max_retries=2)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.cache/uv/environments-v2/rubric-review-ee46250b43bae8b8/lib/python3.12/site-packages/openai/_client.py", line 335, in __init__
+    super().__init__(
+  File "/root/.cache/uv/environments-v2/rubric-review-ee46250b43bae8b8/lib/python3.12/site-packages/openai/_base_client.py", line 1013, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.cache/uv/environments-v2/rubric-review-ee46250b43bae8b8/lib/python3.12/site-packages/openai/_base_client.py", line 937, in __init__
+    super().__init__(**kwargs)
+  File "/root/.cache/uv/environments-v2/rubric-review-ee46250b43bae8b8/lib/python3.12/site-packages/httpx2/_client.py", line 674, in __init__
+    else self._init_proxy_transport(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.cache/uv/environments-v2/rubric-review-ee46250b43bae8b8/lib/python3.12/site-packages/httpx2/_client.py", line 722, in _init_proxy_transport
+    return HTTPTransport(
+           ^^^^^^^^^^^^^^
+  File "/root/.cache/uv/environments-v2/rubric-review-ee46250b43bae8b8/lib/python3.12/site-packages/httpx2/_transports/default.py", line 187, in __init__
+    raise ImportError(
+ImportError: Using SOCKS proxy, but the 'socksio' package is not installed. Make sure to install httpx using `pip install httpx[socks]`.
+
+
+----------------------------------------------------------------------
+Ran 21 tests in 2.525s
+
+FAILED (failures=1)
+Review unavailable (RuntimeError); submitting the failure placeholder.
+Backend accepted review review-1; publication is queued.

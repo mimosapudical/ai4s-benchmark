@@ -1,0 +1,1 @@
+{"ambiguous_accuracy": 1.0, "directed_accuracy": 1.0, "edge_accuracy": 1.0, "failure_type": null, "per_system": {"system_00": 1.0, "system_01": 1.0, "system_02": 1.0, "system_03": 1.0, "system_04": 1.0, "system_05": 1.0, "system_06": 1.0, "system_07": 1.0}, "reward": 1, "worst_accuracy": 1.0}

@@ -1,0 +1,32 @@
+version = "1.0"
+
+[metadata]
+id = "finite-sample-intervention-orientation"
+title = "Finite-sample recovery of interventionally identifiable orientations"
+author = "Jingzhi Chen"
+github = "mimosapudical"
+license = "MIT"
+domain = "applied-mathematics"
+field = "causal-discovery"
+task_version = "1.0.0"
+proposal_status = "not-submitted-unapproved"
+
+[task]
+name = "ai4sbench/finite-sample-intervention-orientation"
+description = "Recover an interventional essential graph from finite Gaussian sufficient statistics while preserving irreducible ambiguity."
+authors = [{name = "Jingzhi Chen"}]
+
+[agent]
+timeout_sec = 1800.0
+
+[verifier]
+timeout_sec = 120.0
+network_mode = "no-network"
+
+[environment]
+network_mode = "no-network"
+build_timeout_sec = 600.0
+cpus = 4
+memory_mb = 4096
+storage_mb = 2048
+gpus = 0
