@@ -1,0 +1,11 @@
+{
+  "exact_five_files": true,
+  "shape_errors": [],
+  "lf_scripts": true,
+  "image_has_no_reference_files": true,
+  "proposal_gate": {
+    "exit_code": 1,
+    "stderr": "New task PR body must link its approved Task Proposal Discussion: https://github.com/AI4S-Bench/ai4s-benchmark/discussions/<number>\n",
+    "expected": "reject until real approved proposal exists"
+  }
+}

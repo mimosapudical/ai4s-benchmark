@@ -1,0 +1,13 @@
+# Round 5 — final committed-source native validation
+
+- Tested source SHA: `5539af71fdd37fefa087a33e88bd08cd5203029c`; upstream `909274d50e91360991b5cc8c60edc3696de37f40`; task 1.0.0. Task source and calibration input hashes are pinned in `computation_manifest_r5_20261017.json` with before/after equality. Later commits only add evidence/reports.
+- Hypothesis: final source retains the frozen-bank behavior after author metadata and no-network configuration were finalized.
+- Command: `python research/intervention-orientation/calibrate.py --output research/intervention-orientation/audit_r5_20261017` (BLAS/OMP thread environment set to 1).
+- Result: exit 0; wrapper wall time 17.13 seconds; 17 recorded controls/attempts. Oracle 5/5, each 96/96. Every negative and schema control has reward 0; observational-only 44/96 and separate-regime fit 55/96 both fail. Task-file hashes in the raw summary identify the final configuration.
+- Independent execution metadata validator: version-2 manifest passes `validate_manifest.py --root .`; the validator explicitly does not certify mathematical interpretation. Native CPU/memory quotas were not enforced; cooperative thread limits were requested. Container resource limits remain untested.
+- Repository checks: 7 author-side scientific unit tests, 11 repository pytest tests, 21 offline proposal/SDK tests all pass; locked runner `--help`, both shell syntax checks and `git diff upstream/main --check` exit 0. The local-only SDK test requires removing inherited proxy variables; raw upstream failure and corrected branch results are retained separately.
+- Harbor 0.20.0 parses the final five-file task. A real `harbor run ... -a oracle -e docker` setup attempt exits 1 with “Docker is not installed or not on PATH”; it never runs the oracle. This is environment failure, not a model failure or a scored scientific result.
+- Missing proposal reference is deliberately rejected by `scripts/validate_task.py` (exit 1). No fabricated approval reference was supplied. Structural TOML checks pass independently; the actual contribution gate is pending human approval.
+- Interpretation: verifies bounded native correctness on the exact frozen source and data. No Docker isolation, frontier-agent difficulty, independent human audit or paper credit is established.
+- Methodology: Hauser & Bühlmann JMLR 2012, Theorem 10/Definition 11; Yan et al. ICML 2024 finite-sample causal testing; Herman et al. CLeaR 2025 synthetic-artifact analysis. Relevant hypotheses/principles are mapped in `METHODOLOGY.md`.
+- Smallest next action: human proposal review, then supported-host Docker validation and frontier calibration. No further scientific feature or threshold change is justified by this round.

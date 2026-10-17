@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/root/.local/bin/harbor",
+    "run",
+    "-p",
+    "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation",
+    "-a",
+    "oracle",
+    "-e",
+    "docker",
+    "--jobs-dir",
+    "/tmp/ai4s_harbor_r5_20261017",
+    "--job-name",
+    "oracle-r5-20261017"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Docker is not installed or not on PATH. Please install Docker and try again.\n",
+  "classification": "environment_setup_failure_not_model_failure"
+}

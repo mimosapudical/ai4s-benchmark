@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "claim_id": "frozen-bank-native-calibration-1.0.0",
+  "repository": {
+    "commit": "5539af71fdd37fefa087a33e88bd08cd5203029c",
+    "dirty": false
+  },
+  "command": [
+    "python",
+    "research/intervention-orientation/calibrate.py",
+    "--output",
+    "research/intervention-orientation/audit_r5_20261017"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.3.4"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.0"
+      }
+    ],
+    "hardware": "x86_64, 9 logical CPUs exposed"
+  },
+  "mathematics": {
+    "assertion_tested": "Fixed-bank legitimate-information oracle passes and invalid/trivial controls fail under the published essential-graph criterion",
+    "coefficient_domain": "IEEE754 float64 for likelihood; exact integer graph orientations",
+    "conventions": "0-based nodes; +1 lower-to-higher edge; 0 reversible; -1 higher-to-lower",
+    "inputs": [
+      "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/environment/Dockerfile",
+      "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/instruction.md",
+      "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/solution/solve.sh",
+      "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/task.toml",
+      "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/tests/test.sh",
+      "research/intervention-orientation/calibrate.py"
+    ],
+    "bounds": {
+      "systems": 8,
+      "nodes": 9,
+      "edges": 12,
+      "oracle_repeats": 5,
+      "obs_n": 1500,
+      "intervention_n": 500
+    },
+    "non_claims": [
+      "No universal recovery theorem",
+      "No Docker/Harbor execution or isolation certification",
+      "No frontier-agent difficulty result"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "frozen evidence generated with PCG64 seed 20261017",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-10-17T09:51:25.671854+00:00",
+    "runtime_seconds": 17.128464740000027,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "wall_timeout_sec": 180,
+    "thread_limits": "cooperative BLAS/OMP environment only"
+  },
+  "outputs": [
+    {
+      "path": "research/intervention-orientation/audit_r5_20261017/summary.json",
+      "sha256": "4e4db6aadb90bc04fc0d5005a9d2b51e34dba78c281c44efe40c3bd8916bebb6",
+      "kind": "result"
+    },
+    {
+      "path": "research/intervention-orientation/audit_r5_20261017.stdout.log",
+      "sha256": "4e4db6aadb90bc04fc0d5005a9d2b51e34dba78c281c44efe40c3bd8916bebb6",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    "5 repeated deterministic oracle runs",
+    "invalid/trivial/corrupted/planting controls",
+    "separate-regime and observational-only ablations"
+  ],
+  "result": "Native bounded calibration completed; inspect summary for scientific metrics",
+  "residual_risks": [
+    "No independent human reviewer",
+    "Fixed synthetic bank and public source memorization",
+    "No enforced process memory/CPU caps"
+  ],
+  "input_artifacts": [
+    {
+      "path": "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/environment/Dockerfile",
+      "sha256": "d8a0b6ce7a69d9c60bc04c0145e5d006254bdc3afb9de23a63ad0818a5d28eca",
+      "sha256_after": "d8a0b6ce7a69d9c60bc04c0145e5d006254bdc3afb9de23a63ad0818a5d28eca"
+    },
+    {
+      "path": "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/instruction.md",
+      "sha256": "6e7cdcce6c408a1defccc09f4a06ce028cd7412475cb97b84a7ce0e8491a4e23",
+      "sha256_after": "6e7cdcce6c408a1defccc09f4a06ce028cd7412475cb97b84a7ce0e8491a4e23"
+    },
+    {
+      "path": "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/solution/solve.sh",
+      "sha256": "9fca4bab3cceb21ee65913d9d79dfbe5291ebe01670fabec03ab3c00fc6f43a4",
+      "sha256_after": "9fca4bab3cceb21ee65913d9d79dfbe5291ebe01670fabec03ab3c00fc6f43a4"
+    },
+    {
+      "path": "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/task.toml",
+      "sha256": "1ffd2142551b2b4c3588ed7a649a1896bc639a29c67d3a4f182f5e53f9ab4bf9",
+      "sha256_after": "1ffd2142551b2b4c3588ed7a649a1896bc639a29c67d3a4f182f5e53f9ab4bf9"
+    },
+    {
+      "path": "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/tests/test.sh",
+      "sha256": "287dc750aa7ae21a8cbb95f02826b11ab2223d5f7785f69581bd9e1fad60a5dd",
+      "sha256_after": "287dc750aa7ae21a8cbb95f02826b11ab2223d5f7785f69581bd9e1fad60a5dd"
+    },
+    {
+      "path": "research/intervention-orientation/calibrate.py",
+      "sha256": "f3a4e1847a082ce80ae57028650a358b92e16307c73d5e49bf73b3ecabc1d84a",
+      "sha256_after": "f3a4e1847a082ce80ae57028650a358b92e16307c73d5e49bf73b3ecabc1d84a"
+    }
+  ],
+  "execution_artifacts": [
+    "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/environment/Dockerfile",
+    "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/instruction.md",
+    "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/solution/solve.sh",
+    "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/task.toml",
+    "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/tests/test.sh",
+    "research/intervention-orientation/calibrate.py"
+  ],
+  "declared_results": [
+    "research/intervention-orientation/audit_r5_20261017/summary.json"
+  ]
+}

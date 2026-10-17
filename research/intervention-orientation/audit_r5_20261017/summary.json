@@ -1,0 +1,283 @@
+{
+  "upstream_sha": "909274d50e91360991b5cc8c60edc3696de37f40",
+  "checkout_sha": "5539af71fdd37fefa087a33e88bd08cd5203029c",
+  "task_version": "1.0.0",
+  "task_files_sha256": {
+    "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/environment/Dockerfile": "d8a0b6ce7a69d9c60bc04c0145e5d006254bdc3afb9de23a63ad0818a5d28eca",
+    "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/instruction.md": "6e7cdcce6c408a1defccc09f4a06ce028cd7412475cb97b84a7ce0e8491a4e23",
+    "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/solution/solve.sh": "9fca4bab3cceb21ee65913d9d79dfbe5291ebe01670fabec03ab3c00fc6f43a4",
+    "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/task.toml": "1ffd2142551b2b4c3588ed7a649a1896bc639a29c67d3a4f182f5e53f9ab4bf9",
+    "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/tests/test.sh": "287dc750aa7ae21a8cbb95f02826b11ab2223d5f7785f69581bd9e1fad60a5dd"
+  },
+  "seconds": 16.89913102799983,
+  "records": [
+    {
+      "name": "oracle_1",
+      "exit_code": 0,
+      "taxonomy": "scientific",
+      "ambiguous_accuracy": 1.0,
+      "directed_accuracy": 1.0,
+      "edge_accuracy": 1.0,
+      "failure_type": null,
+      "per_system": {
+        "system_00": 1.0,
+        "system_01": 1.0,
+        "system_02": 1.0,
+        "system_03": 1.0,
+        "system_04": 1.0,
+        "system_05": 1.0,
+        "system_06": 1.0,
+        "system_07": 1.0
+      },
+      "reward": 1,
+      "worst_accuracy": 1.0
+    },
+    {
+      "name": "oracle_2",
+      "exit_code": 0,
+      "taxonomy": "scientific",
+      "ambiguous_accuracy": 1.0,
+      "directed_accuracy": 1.0,
+      "edge_accuracy": 1.0,
+      "failure_type": null,
+      "per_system": {
+        "system_00": 1.0,
+        "system_01": 1.0,
+        "system_02": 1.0,
+        "system_03": 1.0,
+        "system_04": 1.0,
+        "system_05": 1.0,
+        "system_06": 1.0,
+        "system_07": 1.0
+      },
+      "reward": 1,
+      "worst_accuracy": 1.0
+    },
+    {
+      "name": "oracle_3",
+      "exit_code": 0,
+      "taxonomy": "scientific",
+      "ambiguous_accuracy": 1.0,
+      "directed_accuracy": 1.0,
+      "edge_accuracy": 1.0,
+      "failure_type": null,
+      "per_system": {
+        "system_00": 1.0,
+        "system_01": 1.0,
+        "system_02": 1.0,
+        "system_03": 1.0,
+        "system_04": 1.0,
+        "system_05": 1.0,
+        "system_06": 1.0,
+        "system_07": 1.0
+      },
+      "reward": 1,
+      "worst_accuracy": 1.0
+    },
+    {
+      "name": "oracle_4",
+      "exit_code": 0,
+      "taxonomy": "scientific",
+      "ambiguous_accuracy": 1.0,
+      "directed_accuracy": 1.0,
+      "edge_accuracy": 1.0,
+      "failure_type": null,
+      "per_system": {
+        "system_00": 1.0,
+        "system_01": 1.0,
+        "system_02": 1.0,
+        "system_03": 1.0,
+        "system_04": 1.0,
+        "system_05": 1.0,
+        "system_06": 1.0,
+        "system_07": 1.0
+      },
+      "reward": 1,
+      "worst_accuracy": 1.0
+    },
+    {
+      "name": "oracle_5",
+      "exit_code": 0,
+      "taxonomy": "scientific",
+      "ambiguous_accuracy": 1.0,
+      "directed_accuracy": 1.0,
+      "edge_accuracy": 1.0,
+      "failure_type": null,
+      "per_system": {
+        "system_00": 1.0,
+        "system_01": 1.0,
+        "system_02": 1.0,
+        "system_03": 1.0,
+        "system_04": 1.0,
+        "system_05": 1.0,
+        "system_06": 1.0,
+        "system_07": 1.0
+      },
+      "reward": 1,
+      "worst_accuracy": 1.0
+    },
+    {
+      "name": "nop",
+      "exit_code": 0,
+      "taxonomy": "output_schema",
+      "detail": "[Errno 2] No such file or directory: '/tmp/tmpgjlj4wth/work/answer.json'",
+      "failure_type": "output_schema",
+      "reward": 0
+    },
+    {
+      "name": "empty",
+      "exit_code": 0,
+      "taxonomy": "output_schema",
+      "detail": "Expecting value: line 1 column 1 (char 0)",
+      "failure_type": "output_schema",
+      "reward": 0
+    },
+    {
+      "name": "malformed",
+      "exit_code": 0,
+      "taxonomy": "output_schema",
+      "detail": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+      "failure_type": "output_schema",
+      "reward": 0
+    },
+    {
+      "name": "all_undirected",
+      "exit_code": 0,
+      "taxonomy": "scientific",
+      "ambiguous_accuracy": 1.0,
+      "directed_accuracy": 0.0,
+      "edge_accuracy": 0.4583333333333333,
+      "failure_type": "scientific_threshold",
+      "per_system": {
+        "system_00": 0.6666666666666666,
+        "system_01": 0.25,
+        "system_02": 0.3333333333333333,
+        "system_03": 0.16666666666666666,
+        "system_04": 0.5833333333333334,
+        "system_05": 0.6666666666666666,
+        "system_06": 0.5833333333333334,
+        "system_07": 0.4166666666666667
+      },
+      "reward": 0,
+      "worst_accuracy": 0.16666666666666666
+    },
+    {
+      "name": "constant_forward",
+      "exit_code": 0,
+      "taxonomy": "scientific",
+      "ambiguous_accuracy": 0.0,
+      "directed_accuracy": 0.4807692307692308,
+      "edge_accuracy": 0.2604166666666667,
+      "failure_type": "scientific_threshold",
+      "per_system": {
+        "system_00": 0.16666666666666666,
+        "system_01": 0.4166666666666667,
+        "system_02": 0.3333333333333333,
+        "system_03": 0.4166666666666667,
+        "system_04": 0.16666666666666666,
+        "system_05": 0.16666666666666666,
+        "system_06": 0.08333333333333333,
+        "system_07": 0.3333333333333333
+      },
+      "reward": 0,
+      "worst_accuracy": 0.08333333333333333
+    },
+    {
+      "name": "corrupted_truth",
+      "exit_code": 0,
+      "taxonomy": "scientific",
+      "ambiguous_accuracy": 0.6590909090909091,
+      "directed_accuracy": 0.6730769230769231,
+      "edge_accuracy": 0.6666666666666666,
+      "failure_type": "scientific_threshold",
+      "per_system": {
+        "system_00": 0.6666666666666666,
+        "system_01": 0.6666666666666666,
+        "system_02": 0.6666666666666666,
+        "system_03": 0.6666666666666666,
+        "system_04": 0.6666666666666666,
+        "system_05": 0.6666666666666666,
+        "system_06": 0.6666666666666666,
+        "system_07": 0.6666666666666666
+      },
+      "reward": 0,
+      "worst_accuracy": 0.6666666666666666
+    },
+    {
+      "name": "boolean_state",
+      "exit_code": 0,
+      "taxonomy": "output_schema",
+      "detail": "states must be integers -1, 0, 1",
+      "failure_type": "output_schema",
+      "reward": 0
+    },
+    {
+      "name": "duplicate_key",
+      "exit_code": 0,
+      "taxonomy": "output_schema",
+      "detail": "duplicate JSON key",
+      "failure_type": "output_schema",
+      "reward": 0
+    },
+    {
+      "name": "extra_key",
+      "exit_code": 0,
+      "taxonomy": "output_schema",
+      "detail": "exact system keys required",
+      "failure_type": "output_schema",
+      "reward": 0
+    },
+    {
+      "name": "observational_only",
+      "exit_code": 0,
+      "taxonomy": "scientific",
+      "ambiguous_accuracy": 1.0,
+      "directed_accuracy": 0.0,
+      "edge_accuracy": 0.4583333333333333,
+      "failure_type": "scientific_threshold",
+      "per_system": {
+        "system_00": 0.6666666666666666,
+        "system_01": 0.25,
+        "system_02": 0.3333333333333333,
+        "system_03": 0.16666666666666666,
+        "system_04": 0.5833333333333334,
+        "system_05": 0.6666666666666666,
+        "system_06": 0.5833333333333334,
+        "system_07": 0.4166666666666667
+      },
+      "reward": 0,
+      "worst_accuracy": 0.16666666666666666
+    },
+    {
+      "name": "separate_regime_fit",
+      "exit_code": 0,
+      "taxonomy": "scientific",
+      "ambiguous_accuracy": 0.4772727272727273,
+      "directed_accuracy": 0.6538461538461539,
+      "edge_accuracy": 0.5729166666666666,
+      "failure_type": "scientific_threshold",
+      "per_system": {
+        "system_00": 0.3333333333333333,
+        "system_01": 0.9166666666666666,
+        "system_02": 0.6666666666666666,
+        "system_03": 0.8333333333333334,
+        "system_04": 0.5,
+        "system_05": 0.3333333333333333,
+        "system_06": 0.5,
+        "system_07": 0.5
+      },
+      "reward": 0,
+      "worst_accuracy": 0.3333333333333333
+    },
+    {
+      "name": "symlink",
+      "taxonomy": "output_schema",
+      "detail": "answer must be a small regular JSON file",
+      "failure_type": "output_schema",
+      "reward": 0
+    }
+  ],
+  "execution": "native shell; no Docker/Harbor isolation",
+  "frontier_agent": "not_available_environment_setup",
+  "evidence_sha256": "375b8f9cdb80e8942aef8aa97288cd06fb825b3c899b81cee55425f8b9d0d411"
+}

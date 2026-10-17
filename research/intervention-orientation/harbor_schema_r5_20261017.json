@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "task": {
+    "name": "ai4sbench/finite-sample-intervention-orientation",
+    "description": "Recover an interventional essential graph from finite Gaussian sufficient statistics while preserving irreducible ambiguity.",
+    "authors": [
+      {
+        "name": "Jingzhi Chen",
+        "email": null
+      }
+    ],
+    "keywords": []
+  },
+  "metadata": {
+    "id": "finite-sample-intervention-orientation",
+    "title": "Finite-sample recovery of interventionally identifiable orientations",
+    "author": "Jingzhi Chen",
+    "github": "mimosapudical",
+    "license": "MIT",
+    "domain": "applied-mathematics",
+    "field": "causal-discovery",
+    "task_version": "1.0.0",
+    "proposal_status": "not-submitted-unapproved"
+  },
+  "verifier": {
+    "network_mode": "no-network",
+    "allowed_hosts": null,
+    "timeout_sec": 120.0,
+    "env": {},
+    "user": null,
+    "environment_mode": null,
+    "environment": null,
+    "collect": []
+  },
+  "agent": {
+    "network_mode": null,
+    "allowed_hosts": null,
+    "timeout_sec": 1800.0,
+    "user": null
+  },
+  "environment": {
+    "network_mode": "no-network",
+    "allowed_hosts": null,
+    "build_timeout_sec": 600.0,
+    "docker_image": null,
+    "os": "linux",
+    "cpus": 4,
+    "memory_mb": 4096,
+    "storage_mb": 2048,
+    "gpus": 0,
+    "gpu_types": null,
+    "tpu": null,
+    "mcp_servers": [],
+    "env": {},
+    "skills_dir": null,
+    "healthcheck": null,
+    "workdir": null
+  },
+  "solution": {
+    "env": {}
+  },
+  "source": null,
+  "multi_step_reward_strategy": null,
+  "steps": null,
+  "artifacts": []
+}

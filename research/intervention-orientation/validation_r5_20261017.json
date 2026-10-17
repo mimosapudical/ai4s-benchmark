@@ -1,0 +1,89 @@
+[
+  {
+    "command": [
+      "python",
+      "research/intervention-orientation/test_science.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_cycle_rejected (__main__.ScientificTests.test_cycle_rejected) ... ok\ntest_default_generator_exactly_reproduces_frozen_bank (__main__.ScientificTests.test_default_generator_exactly_reproduces_frozen_bank) ... ok\ntest_oracle_class_conversion_against_mutilated_graphs (__main__.ScientificTests.test_oracle_class_conversion_against_mutilated_graphs) ... ok\ntest_paired_sampling_holds_structure_fixed_and_nests_samples (__main__.ScientificTests.test_paired_sampling_holds_structure_fixed_and_nests_samples) ... ok\ntest_population_likelihood_is_unit_invariant (__main__.ScientificTests.test_population_likelihood_is_unit_invariant) ... ok\ntest_two_node_nonidentifiability_and_intervention (__main__.ScientificTests.test_two_node_nonidentifiability_and_intervention) ... ok\ntest_unshielded_collider_is_observationally_compelled (__main__.ScientificTests.test_unshielded_collider_is_observationally_compelled) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.782s\n\nOK\n",
+    "proxy_removed_for_localhost": false
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "exit_code": 0,
+    "stdout": "...........                                                              [100%]\n11 passed in 1.38s\n",
+    "stderr": "",
+    "proxy_removed_for_localhost": false
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "ci_checks",
+      "-p",
+      "test_*.py"
+    ],
+    "exit_code": 0,
+    "stdout": "Review unavailable (RuntimeError); submitting the failure placeholder.\nBackend accepted review review-1; publication is queued.\n",
+    "stderr": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 2.231s\n\nOK\n",
+    "proxy_removed_for_localhost": true
+  },
+  {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "--script",
+      "ci_checks/rubric_review.py",
+      "--help"
+    ],
+    "exit_code": 0,
+    "stdout": "usage: rubric_review.py [-h] [--model MODEL] [--rubric RUBRIC] [--author-fit]\n                        [--author-fit-model AUTHOR_FIT_MODEL]\n                        [--author-fit-rubric AUTHOR_FIT_RUBRIC]\n                        [--author-fit-only]\n                        target\n\nEvaluate a task proposal against the rubric.\n\npositional arguments:\n  target                Task directory (reads instruction.md) or a standalone\n                        file\n\noptions:\n  -h, --help            show this help message and exit\n  --model MODEL, -m MODEL\n                        Model to use \u2014 Anthropic (claude-*) or OpenAI\n                        (gpt-*/openai/*), routed by slug (default: claude-\n                        opus-4-8)\n  --rubric RUBRIC, -r RUBRIC\n                        Path to rubric markdown file\n  --author-fit          Also run a separate, author-aware pass rating author-\n                        task fit (advisory; does not affect the task\n                        decision).\n  --author-fit-model AUTHOR_FIT_MODEL\n                        Model for the author-fit pass (default: same as\n                        --model).\n  --author-fit-rubric AUTHOR_FIT_RUBRIC\n                        Path to the author-fit rubric markdown file\n  --author-fit-only     Run ONLY the author-fit pass on a task dir (reads\n                        task.toml + instruction.md); skips the proposal\n                        review. For PR-stage use.\n",
+    "stderr": "",
+    "proxy_removed_for_localhost": false
+  },
+  {
+    "command": [
+      "sh",
+      "-n",
+      "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/solution/solve.sh"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "proxy_removed_for_localhost": false
+  },
+  {
+    "command": [
+      "sh",
+      "-n",
+      "tasks/applied-mathematics/causal-discovery/finite-sample-intervention-orientation/tests/test.sh"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "proxy_removed_for_localhost": false
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "upstream/main",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "proxy_removed_for_localhost": false
+  }
+]
